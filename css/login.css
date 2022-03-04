@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,500;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+/* 전역속성 */
+ul ,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #242424;
+}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* 텍스트스타일 */
+h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 40px;    
+    width: 460px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #c4c4c4;
+}
+
+button:hover{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    width: 460px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #00006D;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/login_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loginwrap{
+    width: 600px;
+    height: 825px;
+    background-color: #fff;
+    margin: 52px auto;
+    border-radius: 30px;
+    padding: 80px 80px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0 auto;
+    width: 220px;
+    cursor: pointer;
+}
+
+.login{
+    margin-top: 100px;
+}
+label{
+    display: block;
+    font-size: 16px;
+    color: #191993;
+}
+input{
+    outline: none;
+    background-color: none;
+    width: 460px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.password{
+    margin-top: 10px;
+}
+.idfind{
+    text-align: center;
+    color: #787878;
+    margin-top: 17px;
+    cursor: pointer;
+}
+.signin{
+    text-align: center;
+    color: #787878;
+    margin-top: 200px;
+}
+.signin > span{
+    color: #191993;
+    font-weight: 600;
+    cursor: pointer;
+}
