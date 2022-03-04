@@ -662,13 +662,13 @@ header .gnb .modelwrap {
     color: #fff;
 }
 
-.txtwrap_dream>h3 {
+.txtwrap_user>h3 {
     margin-bottom: 55px;
 }
 
 .uni_bg {
     width: 100%;
-    height: 500px;
+    height: 50px;
     background-image: url(../img/bg_pattern.jpg);
     background-attachment: fixed;
 }
