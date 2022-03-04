@@ -131,3 +131,15 @@ input{
     font-weight: 600;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+    .loginwrap{
+        width: 460px;
+    }
+    input{
+        width: 290px;
+    }
+    button{
+        width: 290px;
+    }
+}

@@ -7,7 +7,7 @@
     color: #242424;
     font-family: 'Noto Sans KR', 'Roboto', sans-serif;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -33,43 +33,43 @@ button {
 
 /* 텍스트스타일 */
 h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     color: #242424;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #242424;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #242424;
 }
 
 h4.bold {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #242424;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #242424;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #242424;
 }
 
 p.bold {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     color: #242424;
 }
@@ -111,7 +111,7 @@ p.bold {
 .btn_md_defult {
 
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     line-height: 50px;
@@ -125,7 +125,7 @@ p.bold {
 .btn_md_defult:hover {
 
     color: #00006D;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     line-height: 50px;
@@ -140,7 +140,7 @@ p.bold {
 
 .btn_md_disabled {
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     line-height: 50px;
@@ -153,7 +153,7 @@ p.bold {
 
 .btn_md_ghost {
     color: #00006D;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
     line-height: 50px;
@@ -179,7 +179,7 @@ header .login {
     width: 100%;
     height: 40px;
     border-bottom: 1px solid #c4c4c4;
-    padding: 7px 150px;
+    padding: 7px 10%;
 }
 
 header .login>ul {
@@ -241,18 +241,11 @@ header .gnb .modelwrap {
     height: 600px;
     padding: 110px 13%;
 }
-/* .gnb .model:hover .modelwrap {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 600px;
-    padding: 60px 13%;
-} */
 
 .modelwrap>.txtwrap {
     width: 200px;
     display: flex;
-    flex-flow:column;
+    flex-flow: column;
 
     color: #242424;
     float: left;
@@ -302,14 +295,66 @@ header .gnb .modelwrap {
     justify-content: end;
 }
 
-/* .modelwrap .boxwrap1 {
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
-    justify-content: end;
-    align-items: center;
-} */
 
+
+@media screen and (max-width: 1810px){
+    .gnb .model:hover .modelwrap{
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 110px 0;
+        height: 500px;
+    }
+
+    .model .modelwrap .txtwrap{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .model .modelwrap .txtwrap p{
+        text-align: center;
+    }
+    .model .modelwrap .txtwrap ul{
+        align-self: center;
+    }
+    .model .modelwrap .txtwrap li{
+        float: left;
+        margin: 0 30px;
+    }
+    .model .modelwrap .boxwrap1{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1208px) {
+    .gnb .model:hover .modelwrap{
+        flex-flow: nowrap row;
+        padding: 110px 0;
+        height: 600px;
+    }
+
+    .modelwrap .boxwrap1 {
+        flex-flow: column;
+        align-items: center;
+    }
+    .gnb .model:hover .modelwrap {
+        padding: 0 13%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .model .modelwrap .txtwrap{
+        width: auto;
+        display: flex;
+        text-align: center;
+
+    }
+    .model .modelwrap .txtwrap li{
+        float: none;
+        margin: 0 30px;
+    }
+
+}
 
 .modelwrap .boxwrap1 .imgbox {
     margin-left: 40px;
@@ -348,7 +393,8 @@ header .gnb .modelwrap {
 .contact ul {
     float: right;
     padding: 27px 0;
-    margin-right: 425px;
+    position: relative;
+    margin-right: 25%;
 }
 
 .contact li {
@@ -376,7 +422,7 @@ header .gnb .modelwrap {
 .support ul {
     float: right;
     padding: 27px 0;
-    margin-right: 318px;
+    margin-right: 13%;
 }
 
 .support li {
@@ -404,7 +450,7 @@ header .gnb .modelwrap {
 .info ul {
     float: right;
     padding: 27px 0;
-    margin-right: 250px;
+    margin-right: 13%;
 }
 
 .info li {
@@ -455,6 +501,22 @@ header .gnb .modelwrap {
     padding-bottom: 2px;
     color: #c4c4c4;
 }
+
+
+
+@media screen and (max-width: 768px){
+    #banner .signup{
+        height: 100px;
+    }
+    #banner .signup div:first-child{
+        display: none;
+    }
+    #banner .loginbox{
+        margin: 0;
+    }
+}
+
+
 
 .loginbox {
     margin-left: 120px;
@@ -555,10 +617,10 @@ header .gnb .modelwrap {
 #lineup .bottom .txtwrap_btm {
     width: 450px;
     float: left;
-
 }
 
-#lineup .bottom .right_btm{
+
+#lineup .bottom .right_btm {
     width: 820px;
     overflow: hidden;
     float: right;
@@ -587,6 +649,67 @@ header .gnb .modelwrap {
     justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 22px;
+}
+@media screen and (max-width: 768px){
+    #lineup .line{
+        align-items: center;
+        padding : 0;
+        width: 100%;
+    }
+    #lineup .line .line_wrap {
+        height: 200px;
+        text-align: center;
+    }
+
+    #lineup .right_btm{
+        padding: 0 10px;
+        padding-top: 60px;
+    }
+    .bottom .btm_wrap{
+        flex: none;
+        padding: 50 5%;
+    }
+    .bottom .btm_wrap .txtwrap_btm{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 250px;
+    }
+    .bottom .btm_wrap .txtwrap_btm .tit{
+        width: 250px;
+    }
+    #lineup .bottom .std{
+        justify-content: space-around;
+        flex-flow: wrap ;
+        width: 220px;
+    }
+
+    #lineup .bottom .std>div{
+        margin: 10px 10px;
+    }
+    .pri h3{
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 1810px){
+    #lineup .btm_wrap{
+        flex-flow: wrap column-reverse;
+        align-items: center;
+    }
+    #lineup .txtwrap_btm .btn_md_defult{
+        margin: 0 auto;
+    }
+    #lineup h3,h4,p{
+        text-align: center
+    }
+    #lineup .bottom .right_btm {
+        width: 100%;
+        overflow: hidden;
+        float: none;
+        display: block;
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -755,7 +878,8 @@ header .gnb .modelwrap {
     padding: 70px 0;
     padding-top: 150px;
 }
-.tit_corp{
+
+.tit_corp {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 70px;
@@ -824,7 +948,7 @@ footer .footer_p {
     width: 300px;
     text-align: center;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 100;
     color: #fff;
 
