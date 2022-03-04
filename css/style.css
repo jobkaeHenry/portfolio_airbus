@@ -202,13 +202,13 @@ header .header_menu>h1 {
     height: 60px;
     padding-top: 22px;
     float: left;
-    margin-left: 250px;
+    margin-left: 13%;
 }
 
 header .gnb>ul {
     height: 60px;
     float: right;
-    margin-right: 250px;
+    margin-right: 13%;
     cursor: pointer;
 }
 
@@ -235,16 +235,28 @@ header .gnb .modelwrap {
 }
 
 .gnb .model:hover .modelwrap {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
     height: 600px;
+    padding: 110px 13%;
 }
+/* .gnb .model:hover .modelwrap {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 600px;
+    padding: 60px 13%;
+} */
 
 .modelwrap>.txtwrap {
-    width: 100px;
+    width: 200px;
+    display: flex;
+    flex-flow:column;
+
     color: #242424;
     float: left;
     text-align: start;
-    margin-top: 110px;
-    margin-left: 250px;
 }
 
 .txtwrap li {
@@ -263,7 +275,7 @@ header .gnb .modelwrap {
 
 }
 
-.model li:checked {
+.model li:hover {
     color: #191993;
     font-weight: 500;
 
@@ -284,20 +296,29 @@ header .gnb .modelwrap {
 
 /* 모델팝업창 헬기_1 */
 .modelwrap .boxwrap1 {
+    display: flex;
+    flex-wrap: wrap;
     float: right;
-    margin-top: 110px;
-    margin-right: 250px;
+    justify-content: end;
 }
 
+/* .modelwrap .boxwrap1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: end;
+    align-items: center;
+} */
 
-.modelwrap .imgbox {
-    float: left;
+
+.modelwrap .boxwrap1 .imgbox {
     margin-left: 40px;
     cursor: pointer;
 }
 
 
 .imgbox>img {
+    display: block;
     max-width: 340px;
 }
 
@@ -410,7 +431,7 @@ header .gnb .modelwrap {
 
 #banner>.img>a>div {
     position: relative;
-    left: 250px;
+    left: 13%;
     top: 480px;
 }
 
@@ -489,6 +510,7 @@ header .gnb .modelwrap {
     margin-top: 28px;
     display: flex;
     justify-content: center;
+    padding: 0 3%;
 }
 
 #lineup .line .line_wrap:nth-child(2) {
@@ -519,26 +541,35 @@ header .gnb .modelwrap {
 
 #lineup .bottom {
     width: 100%;
-    height: 490px;
     background-color: #F9F9F9;
 }
 
 .btm_wrap {
+    padding: 60px 13%;
     margin: 0 auto;
-    padding-top: 60px;
-    width: 1420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #lineup .bottom .txtwrap_btm {
-    width: 580px;
+    width: 450px;
     float: left;
+
 }
 
-#lineup .bottom img {
+#lineup .bottom .right_btm{
+    width: 820px;
+    overflow: hidden;
     float: right;
-    max-width: 820px;
-    object-fit: contain;
-    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#lineup .bottom .right_btm img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 
 }
 
@@ -577,7 +608,7 @@ header .gnb .modelwrap {
 
 .txtwrap_dream {
     margin-top: 383px;
-    margin-left: 250px;
+    margin-left: 13%;
 }
 
 .txtwrap_dream>h3 {
@@ -613,7 +644,7 @@ header .gnb .modelwrap {
 
 .txtwrap_custom {
     margin-top: 383px;
-    margin-right: 250px;
+    margin-right: 13%;
 }
 
 .txtwrap_custom>h3 {
@@ -649,7 +680,7 @@ header .gnb .modelwrap {
 
 .txtwrap_user {
     margin-top: 400px;
-    margin-left: 250px;
+    margin-left: 13%;
 }
 
 .txtwrap_user>h3 {
@@ -778,7 +809,7 @@ header .gnb .modelwrap {
 footer {
     width: 100%;
     overflow: hidden;
-    padding: 12px 250px;
+    padding: 12px 13%;
     background-color: #00006D;
 
 
