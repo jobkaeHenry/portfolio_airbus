@@ -887,10 +887,20 @@ header .gnb .modelwrap {
     width: 460px;
     margin: 0 10px;
     float: left;
-    
+}
+.sm_atc img,
+.lg_atc img{
+    user-select: none;
 }
 .sm_atc:hover img{
-    size: 103%;
+    opacity: 80%;
+    transition-duration: 300ms;
+    user-select: none;
+}
+.lg_atc:hover img{
+    opacity: 80%;
+    transition-duration: 300ms;
+    user-select: none;
 }
 
 
