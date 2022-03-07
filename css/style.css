@@ -949,31 +949,26 @@ footer img {
 
 
 @media screen and (max-width: 1810px) {
+
     #lineup .btm_wrap {
-        flex-flow: wrap column-reverse;
+        flex-flow: row wrap;
         align-items: center;
     }
 
-    #lineup .txtwrap_btm .btn_md_defult {
-        margin: 0 auto;
-    }
-
-    #lineup h3,
-    h4,
-    p {
-        text-align: center
-    }
 
     #lineup .bottom .right_btm {
-        width: 100%;
+        width: 50%;
+        height:256px;
         overflow: hidden;
-        float: none;
-        display: block;
+        
         margin-bottom: 30px;
     }
-}
+    #lineup .bottom .right_btm img{
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
 
-@media screen and (max-width: 1810px) {
     .gnb .model:hover .modelwrap {
         flex-flow: column;
         flex-wrap: wrap;
@@ -1007,7 +1002,28 @@ footer img {
     }
 }
 
-@media screen and (max-width: 1208px) {
+@media screen and (max-width: 1220px) {
+
+    #lineup .bottom .right_btm {
+        width: 450px;
+    }
+    #lineup .btm_wrap {
+        flex-flow: wrap column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #lineup .txtwrap_btm .btn_md_defult {
+        margin: 0 auto;
+    }
+
+    #lineup h3,
+    h4,
+    p {
+        text-align: center
+    }
+
     #banner .img {
         background-position: center;
     }
@@ -1053,9 +1069,10 @@ footer img {
     #banner .loginbox {
         margin: 0;
     }
-}
 
-@media screen and (max-width: 768px) {
+    #lineup .bottom .right_btm {
+        width: 100%;
+    }
 
     .footer_p {
         display: none;
@@ -1176,4 +1193,11 @@ footer img {
     br {
         display: none;
     }
+}
+
+
+
+#lineup .txtwrap_btm .btn_md_defult {
+    margin: 0 auto;
+    max-width: 90%
 }
