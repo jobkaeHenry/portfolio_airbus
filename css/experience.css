@@ -247,6 +247,11 @@ p {
   margin-left: 190px;
 }
 
+
+#place{
+  width: 100%;
+}
+
 .place_list{
   margin-bottom: 50px;
 }
@@ -264,4 +269,54 @@ flex-direction: column
 }
 #list_left>h5{
   margin-bottom: 30px;
+}
+#mapright{
+  margin-left : 0px;
+  float: right;
+}
+
+#map{
+  width:940px;
+  height:570px;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 13%;
+  background-color: #00006D;
+
+
+}
+
+footer .logo_md_wh {
+  float: left;
+  margin-top: 5px;
+}
+
+footer .footer_p {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 100;
+  color: #fff;
+
+}
+
+footer .footer_menu {
+  height: 22px;
+  float: right;
+
+}
+
+footer li {
+  float: left;
+  margin: 0 10px;
+}
+
+footer img {
+  max-width: 22px;
+  float: left;
 }
