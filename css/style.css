@@ -311,7 +311,7 @@ header .gnb .modelwrap {
 }
 
 .modelwrap .boxwrap {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     float: right;
     justify-content: end;
