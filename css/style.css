@@ -286,13 +286,13 @@ header .gnb .modelwrap {
 
 }
 
-.model li:hover {
+.model li:onclick {
     color: #191993;
     font-weight: 500;
 
 }
 
-.model li:checked::after {
+.model li:onclick::after {
     content: url(../img/icon_arr_act.png);
     margin-left: 30px;
 
@@ -306,8 +306,12 @@ header .gnb .modelwrap {
 }
 
 /* 모델팝업창 헬기_1 */
-.modelwrap .boxwrap1 {
-    display: flex;
+#modelli{
+    display: inline-block;
+}
+
+.modelwrap .boxwrap {
+    display: none;
     flex-wrap: wrap;
     float: right;
     justify-content: end;
@@ -1105,6 +1109,7 @@ footer img {
     #lineup .line {
         align-items: center;
         padding: 5%;
+        padding-bottom: 0;
         width: 100%;
     }
 

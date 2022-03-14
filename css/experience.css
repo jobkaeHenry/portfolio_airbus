@@ -1,0 +1,267 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,500;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+
+
+/* 초기화 */
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/* 텍스트스타일 */
+h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #242424;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #242424;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 디자인 컴포넌트 */
+
+.logo_lg {
+  width: 220px;
+  height: 44px;
+  background-image: url(../img/airbus_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo_md {
+  width: 100px;
+  height: 20px;
+  background-image: url(../img/airbus_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo_md_wh {
+  width: 100px;
+  height: 20px;
+  background-image: url(../img/airbus_logo_wh.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo_md_lg {
+  width: 100px;
+  height: 20px;
+  background-image: url(../img/airbus_logo_wh.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn_md_defult {
+
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+  width: 270px;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #00006D;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_md_defult:hover {
+
+  color: #00006D;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  width: 270px;
+  height: 50px;
+  border: 2px solid #00006D;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_md_disabled {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+  width: 270px;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #c4c4c4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_md_ghost {
+  color: #00006D;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+
+  width: 270px;
+  height: 50px;
+  border: 2px solid #00006D;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_xs_default {
+  color: #ffffff;
+  background-color: #00006D;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+  padding: 0 7px;
+  margin-right:7px;
+  margin-top: 10px;
+  border-radius: 5px;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.top {
+  width: 100%;
+  height: 275px;
+  background-image: url(../img/exper_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.txtwrap {
+  text-align: center;
+}
+
+.top .txtwrap h2,
+p {
+  color: #fff
+}
+
+.wrap {
+  padding: 100px 13%;
+
+}
+
+.container {
+  width: 100%;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+.left {
+  margin-left: 30px;
+  float: left;
+}
+
+.right {
+  float: left;
+  margin-left: 190px;
+}
+
+.place_list{
+  margin-bottom: 50px;
+}
+.place_list p {
+  color: #242424;
+  font-weight: 300;
+}
+.place_list:last-child{
+  margin-bottom: 0;
+}
+
+#list_left{
+display:flex;
+flex-direction: column
+}
+#list_left>h5{
+  margin-bottom: 30px;
+}

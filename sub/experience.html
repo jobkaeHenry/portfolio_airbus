@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>airbus experience</title>
+  <link rel="stylesheet" href="../css/experience.css">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e47c33adda45893786512f0c4a15fd3"></script>
+  <script src="../js/map.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="top">
+      <div class="txtwrap">
+        <h2>시승신청</h2>
+        <p>에어버스 헬리콥터에서 제공하는 시승 서비스를 이용해 보세요</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="container" id="agree">
+        <div class="left">
+          <h5>서비스 이용 동의</h5>
+        </div>
+        <div class="right">
+          <form method="POST">
+            <p><label><input type="checkbox" name="term">(필수)시승기체 이용 및 서비스 이용에 따른 주요 고지사항 및 이용약관 안내</label></p>
+            <p><label><input type="checkbox" name="term">(필수) 개인정보 수집 및 이용안내</label></p>
+            <p><label><input type="checkbox" name="term">(필수) 개인정보 처리위탁 안내</label></p>
+          </form>
+        </div>
+      </div>
+      <div class="container" id="place">
+        <div class="left" id="list_left">
+          <h5>시승 장소</h5>
+          <div class="place_list">
+            <h4>에어버스 체험장 인천공항점</h4>
+            <p id="address">인천광역시 중구 공항로 271 인천국제공항역</p>
+            <p id="hour">운영시간 : 09:00 &#36; 22:00</p>
+            <p id="number">031) 031 - 0310</p>
+            <div class="btn_xs_default">구매 안내 가능</div>
+            <div class="btn_xs_default">조종사 상주</div>
+          </div>
+          <div class="place_list">
+            <h4>에어버스 체험장 김포공항점</h4>
+            <p id="address">서울특별시 강서구 하늘길 38</p>
+            <p id="hour">운영시간 : 09:00 &#36; 18:00</p>
+            <p id="number">02)020-2020</p>
+            <div class="btn_xs_default">구매 안내 가능</div>
+            <div class="btn_xs_default">조종사 상주</div>
+            <div class="btn_xs_default">시승 가능</div>
+          </div>
+          <div class="place_list">
+            <h4>에어버스 체험장 제주공항점</h4>
+            <p id="address">제주특별자치도 제주시 공항로 2 제주국제공항</p>
+            <p id="hour">운영시간 : 09:00 &#36; 18:00</p>
+            <p id="number">064)064-0640</p>
+            <div class="btn_xs_default">시승 가능</div>
+          </div>
+        </div>
+        <div class="right">
+          <div id="map" style="width:500px;height:400px;"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
