@@ -583,11 +583,6 @@ header .gnb .modelwrap {
 }
 
 
-
-#lineup .line .line_wrap_active:nth-child(2) {
-    margin: 0 10px;
-}
-
 #lineup .line .line_wrap_active {
     width: 460px;
     height: 288px;
@@ -641,11 +636,11 @@ header .gnb .modelwrap {
     float: right;
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 
 #lineup .bottom .right_btm img {
-    max-width: 100%;
-    display: block;
+    width: 80%;
 
 }
 
@@ -981,20 +976,20 @@ footer img {
     #lineup .btm_wrap {
         flex-flow: row wrap;
         align-items: center;
+        justify-content: center;
+        padding: 60px 0;
     }
 
 
     #lineup .bottom .right_btm {
-        width: 50%;
-        height:256px;
+        width: 656px;
         overflow: hidden;
-        
         margin-bottom: 30px;
+        margin-left: 5%;
+        float: none;
     }
     #lineup .bottom .right_btm img{
-        max-width: 100%;
-        display: block;
-        height: auto;
+        width:100%;
     }
 
     .gnb .model:hover .modelwrap {
@@ -1010,6 +1005,7 @@ footer img {
         display: flex;
         text-align: center;
         justify-content: center;
+        float: none;
     }
 
     .model .modelwrap .txtwrap p {
@@ -1030,28 +1026,39 @@ footer img {
     }
 }
 
+
+
 @media screen and (max-width: 1220px) {
 
     #lineup .bottom .right_btm {
-        width: 450px;
+        width: 500px;
     }
     #lineup .btm_wrap {
         flex-flow: wrap column-reverse;
         align-items: center;
         justify-content: center;
-        
     }
 
     #lineup .txtwrap_btm .btn_md_defult {
         margin: 0 auto;
     }
-
-    #lineup h3,
-    h4,
+    #lineup h4,
     p {
-        text-align: center
+        text-align: center;
     }
+    .tit h3{
+        text-align: center;
+    }
+    .pri h3{
+        text-align: center;
+    }
+}
+    
 
+    .txtwrap_dream>h3{
+        text-align: left;
+    }
+    
     #banner .img {
         background-position: center;
     }
@@ -1138,6 +1145,10 @@ footer img {
     }
 
     #lineup .line .line_wrap {
+        height: 200px;
+        text-align: center;
+    }
+    #lineup .line .line_wrap_active {
         height: 200px;
         text-align: center;
     }
