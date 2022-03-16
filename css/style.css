@@ -313,6 +313,7 @@ header .gnb .modelwrap {
 .modelwrap .boxwrap {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
     float: right;
     justify-content: end;
 
@@ -1023,6 +1024,7 @@ footer img {
 
     .model .modelwrap .boxwrap1 {
         justify-content: space-between;
+        flex-direction: row;
     }
 }
 
@@ -1052,7 +1054,7 @@ footer img {
     .pri h3{
         text-align: center;
     }
-}
+
     
 
     .txtwrap_dream>h3{
@@ -1069,9 +1071,8 @@ footer img {
         height: 600px;
     }
 
-    .modelwrap .boxwrap1 {
-        flex-flow: column;
-        align-items: center;
+    .modelwrap .boxwrap {
+        flex-direction: column;
     }
 
     .gnb .model:hover .modelwrap {
@@ -1081,7 +1082,7 @@ footer img {
     }
 
     .model .modelwrap .txtwrap {
-        width: auto;
+        width: 150px;
         display: flex;
         text-align: center;
     }
@@ -1093,6 +1094,21 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+
+    header .gnb>ul>li{
+    width: 60px;
+    margin: 0 10px;
+    }
+
+    
+    .imgbox>img:hover {
+        max-width: 350px;
+        width: 350px;
+        transition-duration: 300ms;
+    }
+    .gnb .model:hover .modelwrap{
+        justify-content: space-between;
+    }
     #banner .signup {
         height: 100px;
     }
@@ -1106,7 +1122,7 @@ footer img {
     }
 
     #lineup .bottom .right_btm {
-        width: 100%;
+        width: 50%;
     }
 
     .footer_p {
@@ -1201,9 +1217,33 @@ footer img {
         float: none;
         margin: 0 0px;
     }
+    
 }
 
 @media screen and (max-width: 627px) {
+    .imgbox>img {
+        max-width: 265px;
+    }
+    .modelwrap .boxwrap .imgbox{
+        width: 210px;
+    }
+    .imgbox>img:hover {
+        max-width: 2700px;
+        width: 220px;
+        transition-duration: 300ms;
+    }
+    .model .modelwrap .txtwrap{
+        text-align: left;
+        width: 100px;
+    }
+    .model .modelwrap .txtwrap li {
+        margin: 30px 0;
+        font-size: 25px;
+    }
+
+    .modelwrap .imgbox{
+        width: 250px;
+    }
 
     .sm_atc,
     .lg_atc {
