@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에어버스 헬리콥터</title>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -34,12 +37,13 @@
                                     <div class="txtwrap">
                                         <p>모델정보</p>
                                         <ul id="modelli">
-                                            <li class="mli">소형</li>
-                                            <li class="mli">중형</li>
-                                            <li class="mli">대형</li>
+                                            <li class="activeTop" id="mli1">소형</li>
+                                            <li id="mli2">중형</li>
+                                            <li id="mli3">대형</li>
                                         </ul>
                                     </div>
-                                    <div class="boxwrap">
+                                    <!-- 첫번째 모델리스트 -->
+                                    <div class="boxwrap" id="boxwrap1">
                                         <a href="#">
                                             <div class="imgbox">
                                                 <img src="./img/H125.png" alt="h125헬리콥터">
@@ -51,7 +55,7 @@
                                         </a>
                                         <a href="#">
                                             <div class="imgbox">
-                                                <img src="./img/H130-removebg-preview.png" alt="h130헬리콥터">
+                                                <img src="./img/H130.png" alt="h130헬리콥터">
                                                 <div>
                                                     <h4>H130</h4>
                                                     <p>120,000&#36;</p>
@@ -60,7 +64,7 @@
                                         </a>
                                         <a href="#">
                                             <div class="imgbox">
-                                                <img src="./img/H135-removebg-preview.png" alt="h135헬리콥터">
+                                                <img src="./img/H135.png" alt="h135헬리콥터">
                                                 <div>
                                                     <h4>H135</h4>
                                                     <p>120,000&#36;</p>
@@ -68,8 +72,66 @@
                                             </div>
                                         </a>
                                     </div>
-                                    
-
+                                    <!-- 두번째 모델리스트 -->
+                                    <div class="boxwrap" id="boxwrap2">
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H145.png" alt="h125헬리콥터">
+                                                <div>
+                                                    <h4>H145</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H155.png" alt="h130헬리콥터">
+                                                <div>
+                                                    <h4>H155</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H160.png" alt="h135헬리콥터">
+                                                <div>
+                                                    <h4>H160</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- 세번째 모델리스트 -->
+                                    <div class="boxwrap" id="boxwrap3">
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H175.png" alt="h125헬리콥터">
+                                                <div>
+                                                    <h4>H175</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H215.png" alt="h130헬리콥터">
+                                                <div>
+                                                    <h4>H215</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="imgbox">
+                                                <img src="./img/H225.png" alt="h135헬리콥터">
+                                                <div>
+                                                    <h4>H225</h4>
+                                                    <p>120,000&#36;</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </li>
@@ -112,7 +174,7 @@
                     <div class="txtwrap_bn">
                         <h2>H135</h2>
                         <h4>스마트하고 민첩한 헬리콥터</h4>
-                        <h5 class="thin">Smart, agile – and reliable</h5>
+                        <h5 class="thin">Smart, agile and reliable</h5>
                         <a href="#">
                             <div class="btn_md_defult">더 알아보기</div>
                         </a>
@@ -132,36 +194,90 @@
                         <h3>헬리콥터 라인업</h3>
                         <p>용도에 맞는 다양한 에어버스의 헬리콥터들을 확인해보세요.</p>
                         <ul>
-                            <li>소형</li>
-                            <li>중형</li>
-                            <li>대형</li>
+                            <li id="smLine1" class="activeMid">소형</li>
+                            <li id="smLine2">중형</li>
+                            <li id="smLine3">대형</li>
                         </ul>
                     </div>
-                    <div class="line">
-                        <div class="line_wrap">
+
+                    <!-- 라인업1 -->
+                    <div class="line" id="line1">
+                        <div class="line_wrap_active" id="lineWrap1">
                             <img src="./img/H125.png" alt="h125헬리콥터">
                             <div>
                                 <h4>H125</h4>
                                 <p>120,000&#36;</p>
                             </div>
                         </div>
-                        <div class="line_wrap">
-                            <img src="./img/H130-removebg-preview.png" alt="h125헬리콥터">
+                        <div class="line_wrap" id="lineWrap2">
+                            <img src="./img/H130.png" alt="h125헬리콥터">
                             <div>
                                 <h4>H130</h4>
                                 <p>120,000&#36;</p>
                             </div>
                         </div>
-                        <div class="line_wrap">
-                            <img src="./img/H135-removebg-preview.png" alt="h125헬리콥터">
+                        <div class="line_wrap" id="lineWrap3">
+                            <img src="./img/H135.png" alt="h125헬리콥터">
                             <div>
                                 <h4>H135</h4>
                                 <p>120,000&#36;</p>
                             </div>
                         </div>
                     </div>
+                    <!-- 라언업 2 -->
+                    <div class="line" id="line2">
+                        <div class="line_wrap" id="lineWrap4">
+                            <img src="./img/H145.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H145</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                        <div class="line_wrap" id="lineWrap5">
+                            <img src="./img/H155.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H155</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                        <div class="line_wrap" id="lineWrap6">
+                            <img src="./img/H160.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H160</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 라인업 3 -->
+                    <div class="line" id="line3">
+                        <div class="line_wrap"id="lineWrap7">
+                            <img src="./img/H175.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H175</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                        <div class="line_wrap" id="lineWrap8">
+                            <img src="./img/H215.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H215</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                        <div class="line_wrap" id="lineWrap9">
+                            <img src="./img/H225.png" alt="h125헬리콥터">
+                            <div>
+                                <h4>H225</h4>
+                                <p>120,000&#36;</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bottom">
+
+
+                <!-- 하단 이미지 9개 중 1개 -->
+                <div class="bottom" id="btm1">
                     <div class="btm_wrap">
                         <div class="txtwrap_btm">
                             <div class="tit">
@@ -200,7 +316,327 @@
                         </div>
                     </div>
                 </div>
-            </section>
+
+
+
+                <!-- 2번째 -->
+                <div class="bottom" id="btm2">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H130</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H130.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3번째 -->
+                <div class="bottom" id="btm3">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H135</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H135.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+                <!-- 4번째 -->
+                <div class="bottom" id="btm4">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H145</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H145.png" alt="h125헬리콥터">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 5번째 -->
+                <div class="bottom" id="btm5">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H155</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H155.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6번째 -->
+                <div class="bottom" id="btm6">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H160</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H160.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+                <!-- 7번째 -->
+                <div class="bottom" id="btm7">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H175</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H175.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+                <!-- 8번째 -->
+                <div class="bottom" id="btm8">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H215</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H215.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
+                <!-- 9번째 -->
+                <div class="bottom" id="btm9">
+                    <div class="btm_wrap">
+                        <div class="txtwrap_btm">
+                            <div class="tit">
+                                <h3>H225</h3>
+                                <h4>편리한 운용, 유지비까지 착한 만능 헬리콥터</h4>
+                            </div>
+                            <div class="pri">
+                                <p>가격</p>
+                                <h3>130,000&#36;&sim;</h3>
+                            </div>
+                            <div class="std">
+                                <div>
+                                    <p class="bold">항속거리</p>
+                                    <p>703km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">순항속도</p>
+                                    <p>224km</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대이륙중량</p>
+                                    <p>2,250kg</p>
+                                </div>
+                                <div>
+                                    <p class="bold">최대탑승인원</p>
+                                    <p>5명</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="btn_md_defult">더 알아보기</div>
+                            </a>
+                        </div>
+                        <div class="right_btm">
+                            <img src="./img/H225.png" alt="h130헬리콥터">
+                        </div>
+                    </div>
+                </div>
 
 
             <!-- 당신의 꿈을 섹션 -->
@@ -353,5 +789,5 @@
         </footer>
     </div>
 </body>
-<script src="./js/main.js"></script>
+
 </html>
