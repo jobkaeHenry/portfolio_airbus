@@ -280,11 +280,7 @@ header .gnb .modelwrap {
     font-weight: 400;
 }
 
-.txtwrap li::after {
-    content: url(../img/icon_arr_defult.png);
-    margin-left: 30px;
 
-}
 
 .model .activeTop {
     color: #191993;
@@ -294,6 +290,11 @@ header .gnb .modelwrap {
 
 .model .activeTop::after {
     content: url(../img/icon_arr_act.png);
+    margin-left: 30px;
+
+}
+.txtwrap li::after {
+    content: url(../img/icon_arr_defult.png);
     margin-left: 30px;
 
 }
@@ -428,6 +429,9 @@ header .gnb .modelwrap {
     float: left;
     margin: 0 10px;
 }
+
+
+
 
 
 /* 배너영역 */
@@ -629,7 +633,10 @@ header .gnb .modelwrap {
     -ms-user-select: none;
     user-select: none;
 }
-
+#lineup .txtwrap_btm .btn_md_defult {
+    margin: 0 auto;
+    max-width: 90%
+}
 
 #lineup .bottom .right_btm {
     width: 820px;
@@ -993,6 +1000,10 @@ footer img {
         width:100%;
     }
 
+/*  */
+
+
+
     .gnb .model:hover .modelwrap {
         flex-flow: column;
         flex-wrap: wrap;
@@ -1099,8 +1110,6 @@ footer img {
     width: 60px;
     margin: 0 10px;
     }
-
-    
     .imgbox>img:hover {
         max-width: 350px;
         width: 350px;
@@ -1108,6 +1117,10 @@ footer img {
     }
     .gnb .model:hover .modelwrap{
         justify-content: space-between;
+
+
+
+
     }
     #banner .signup {
         height: 100px;
@@ -1221,11 +1234,19 @@ footer img {
 }
 
 @media screen and (max-width: 627px) {
+
+    /* 헤더니까 싸들고다니기 */
+    h1 {
+        display: none;
+    }
     .imgbox>img {
-        max-width: 265px;
+        max-width: 100%;
     }
     .modelwrap .boxwrap .imgbox{
-        width: 210px;
+        width: 80%;
+    }
+    .modelwrap .boxwrap{
+        width: 100%;
     }
     .imgbox>img:hover {
         max-width: 2700px;
@@ -1244,6 +1265,17 @@ footer img {
     .modelwrap .imgbox{
         width: 250px;
     }
+
+    .model .activeTop::after {
+        display: none;
+    
+    }
+    .txtwrap li::after {
+        display: none;
+    }
+
+
+
 
     .sm_atc,
     .lg_atc {
@@ -1277,7 +1309,5 @@ footer img {
 
 
 
-#lineup .txtwrap_btm .btn_md_defult {
-    margin: 0 auto;
-    max-width: 90%
-}
+
+
