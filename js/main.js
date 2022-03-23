@@ -35,7 +35,8 @@ $(function () {
   });
 
 });
-$(function () {
+  // 중단 박스
+$(function midBoxInit () {
   $("#btm2").hide();
   $("#btm3").hide();
   $("#btm4").hide();
@@ -48,7 +49,7 @@ $(function () {
 
 
 $(function(){
-  // 중단 박스
+
   $("#line2").hide();
   $("#line3").hide();
 });

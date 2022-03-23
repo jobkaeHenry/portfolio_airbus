@@ -1,0 +1,39 @@
+.top {
+  width: 100%;
+  height: 275px;
+  background-image: url(../img/exper_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.txtwrap {
+  text-align: center;
+}
+
+.top .txtwrap h2 {
+  color: #fff
+}
+
+.top .txtwrap p {
+  color: #fff
+}
+
+.container {
+  width: 100%;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+  padding: 25px 0;
+  overflow: hidden;
+  padding: 30px 13%;
+  margin-bottom: 30px;
+}
+
+.wrap {
+  padding: 100px 13%;
+  overflow: hidden;
+
+}

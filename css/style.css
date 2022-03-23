@@ -1003,7 +1003,7 @@ footer img {
         width:100%;
     }
 
-/*  */
+/* 들고다닐것 */
 
 
 
@@ -1120,11 +1120,10 @@ footer img {
     }
     .gnb .model:hover .modelwrap{
         justify-content: space-between;
-
-
-
-
     }
+
+
+    
     #banner .signup {
         height: 100px;
     }

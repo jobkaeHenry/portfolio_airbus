@@ -448,162 +448,6 @@ header .gnb .modelwrap {
   margin: 0 10px;
 }
 
-
-
-
-
-/* -----------------------본문----------------------------------- */
-
-.top {
-  width: 100%;
-  height: 275px;
-  background-image: url(../img/exper_top.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column
-}
-
-.txtwrap {
-  text-align: center;
-}
-
-.top .txtwrap h2 {
-  color: #fff
-}
-
-.top .txtwrap p {
-  color: #fff
-}
-
-.wrap {
-  padding: 100px 13%;
-  overflow: hidden;
-
-}
-
-.container {
-  width: 100%;
-  border-top: solid 1px #c4c4c4;
-  border-bottom: solid 1px #c4c4c4;
-  padding: 25px 0;
-  overflow: hidden;
-}
-
-.l_agree{
-  float: left;
-  height: 100%;
-  margin-left: 30px;
-}
-.r_agree{
-  margin-left: 25%;
-}
-
-.left {
-  margin-left: 30px;
-  float: left;
-}
-
-.right {
-  float: left;
-  margin-right: 30px;
-}
-
-
-#place {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
-
-.place_list {
-  margin-bottom: 50px;
-  width: 303px;
-  display: block;
-}
-
-.place_list p {
-  color: #242424;
-  font-weight: 300;
-}
-
-.place_list:last-child {
-  margin-bottom: 0;
-}
-
-#list_left {
-  display: flex;
-  flex-direction: column
-}
-
-#list_left>h5 {
-  margin-bottom: 30px;
-}
-
-#mapright {
-  margin-left: 0px;
-  float: right;
-  background-color: #242424;
-}
-
-#map {
-  width: 940px;
-  height: 570px;
-
-}
-.submit{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 푸터 */
-footer {
-  width: 100%;
-  overflow: hidden;
-  padding: 12px 13%;
-  background-color: #00006D;
-
-
-}
-
-footer .logo_md_wh {
-  float: left;
-  margin-top: 5px;
-}
-
-footer .footer_p {
-  width: 300px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1em;
-  font-weight: 100;
-  color: #fff;
-
-}
-
-footer .footer_menu {
-  height: 22px;
-  float: right;
-
-}
-
-footer li {
-  float: left;
-  margin: 0 10px;
-}
-
-footer img {
-  max-width: 22px;
-  float: left;
-}
-
 @media screen and (max-width: 1810px) {
   /* 들고다닐것 */
 
@@ -642,36 +486,6 @@ footer img {
     justify-content: space-between;
     flex-direction: row;
   }
-
-#place{
-  flex-flow: wrap column;
-  justify-content: center;
-}
-#list_left{
-  flex-direction: row;
-  justify-content: space-around;
-}
-#left_place{
-  margin-left: 0;
-}
-#left_place>h5{
-  text-align: center;
-  margin-bottom: 30px;
-}
-#mapright{
-  margin-right: 0;
-  display: flex;
-  justify-content: center;
-}
-}
-
-@media screen and (max-width: 1270px) {
-  .place_list{
-    display: none;
-  }
-  #map{
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1220px) {
@@ -700,17 +514,6 @@ footer img {
   .model .modelwrap .txtwrap li {
     float: none;
     margin: 0 30px;
-  }
-  #agree{
-    display: flex;
-    flex-direction: column;
-  }
-  #agree>.l_agree{
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .r_agree{
-    margin-right: 25%;
   }
 }
 
@@ -776,14 +579,7 @@ footer img {
 }
 
 @media screen and (max-width: 627px) {
-  .top{
-    padding: 0 10%;
-    text-align: center;
-  }
-  .r_agree{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+
   h1 {
     display: none;
   }
@@ -828,4 +624,48 @@ footer img {
   .txtwrap li::after {
     display: none;
   }
+}
+
+
+
+/* Footer */
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 13%;
+  background-color: #00006D;
+
+
+}
+
+footer .logo_md_wh {
+  float: left;
+  margin-top: 5px;
+}
+
+footer .footer_p {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+  font-weight: 100;
+  color: #fff;
+
+}
+
+footer .footer_menu {
+  height: 22px;
+  float: right;
+
+}
+
+footer li {
+  float: left;
+  margin: 0 10px;
+}
+
+footer img {
+  max-width: 22px;
+  float: left;
 }
