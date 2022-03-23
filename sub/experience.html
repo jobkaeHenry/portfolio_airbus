@@ -5,12 +5,166 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>airbus experience</title>
+  <title>에어버스 시승신청</title>
   <link rel="stylesheet" href="../css/experience.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
 </head>
 
 <body>
-  
+  <header>
+    <nav>
+      <div class="login">
+        <ul>
+          <li><a href="../sub/login.html">로그인</a></li>
+          <li><a href="../sub/signup.html">회원가입</a></li>
+        </ul>
+      </div>
+      <div class="header_menu">
+        <h1>
+          <a href="/index.html">
+            <div class="logo_md" alt="로고"></div>
+          </a>
+        </h1>
+        <div class="gnb">
+          <ul>
+            <li class="model">모델
+              <div class="modelwrap">
+                <div class="txtwrap">
+                  <p>모델정보</p>
+                  <ul id="modelli">
+                    <li class="activeTop" id="mli1">소형</li>
+                    <li id="mli2">중형</li>
+                    <li id="mli3">대형</li>
+                  </ul>
+                </div>
+                <!-- 첫번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap1">
+                  <a href="../sub/model125.html">
+                    <div class="imgbox">
+                      <img src="../img/H125.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H125</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model130.html">
+                    <div class="imgbox">
+                      <img src="../img/H130.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H130</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model135.html">
+                    <div class="imgbox">
+                      <img src="../img/H135.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H135</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 두번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap2">
+                  <a href="../sub/model145.html">
+                    <div class="imgbox">
+                      <img src="../img/H145.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H145</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model155.html">
+                    <div class="imgbox">
+                      <img src="../img/H155.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H155</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model160.html">
+                    <div class="imgbox">
+                      <img src="../img/H160.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H160</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 세번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap3">
+                  <a href="../sub/model175.html">
+                    <div class="imgbox">
+                      <img src="../img/H175.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H175</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model215.html">
+                    <div class="imgbox">
+                      <img src="../img/H215.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H215</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model225.html">
+                    <div class="imgbox">
+                      <img src="../img/H225.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H225</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li class="contact">체험
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/experience.html">시승신청</a></li>
+                  <li><a href="../sub/recieveinfo.html">카달로그 신청</a></li>
+                  <li><a href="../sub/tour.html">견학신청</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="support">고객지원
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/Hcare.html">Hcare</a></li>
+                  <li><a href="../sub/qna.html">1:1문의</a></li>
+                  <li><a href="../sub/notice.html">공지사항</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="info">회사소개
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/news.html">보도자료</a></li>
+                  <li><a href="../sub/value.html">경영이념</a></li>
+                  <li><a href="../sub/achivement.html">성과</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+
+
+
   <main>
     <div class="top">
       <div class="txtwrap">
@@ -20,49 +174,55 @@
     </div>
     <div class="wrap">
       <div class="container" id="agree">
-        <div class="left">
+        <div class="l_agree">
           <h5>서비스 이용 동의</h5>
         </div>
-        <div class="right">
+        <div class="r_agree">
           <form method="POST">
-            <p><label><input type="checkbox" name="term">(필수)시승기체 이용 및 서비스 이용에 따른 주요 고지사항 및 이용약관 안내</label></p>
-            <p><label><input type="checkbox" name="term">(필수) 개인정보 수집 및 이용안내</label></p>
-            <p><label><input type="checkbox" name="term">(필수) 개인정보 처리위탁 안내</label></p>
+            <p><label><input type="checkbox" name="term"> (필수)시승기체 이용 및 서비스 이용에 따른 주요 고지사항 및 이용약관 안내</label></p>
+            <p><label><input type="checkbox" name="term"> (필수) 개인정보 수집 및 이용 안내</label></p>
+            <p><label><input type="checkbox" name="term"> (필수) 개인정보 처리위탁 안내</label></p>
           </form>
         </div>
       </div>
       <div class="container" id="place">
-        <div class="left" id="list_left">
+        <div class="left" id="left_place">
           <h5>시승 장소</h5>
-          <div class="place_list">
-            <h4>에어버스 체험장 인천공항점</h4>
-            <p id="address">인천광역시 중구 공항로 271 인천국제공항역</p>
-            <p id="hour">운영시간 : 09:00 &sim; 22:00</p>
-            <p id="number">031) 031 - 0310</p>
-            <div class="btn_xs_default">구매 안내 가능</div>
-            <div class="btn_xs_default">조종사 상주</div>
-          </div>
-          <div class="place_list">
-            <h4>에어버스 체험장 김포공항점</h4>
-            <p id="address">서울특별시 강서구 하늘길 38</p>
-            <p id="hour">운영시간 : 09:00 &sim; 18:00</p>
-            <p id="number">02)020-2020</p>
-            <div class="btn_xs_default">구매 안내 가능</div>
-            <div class="btn_xs_default">조종사 상주</div>
-            <div class="btn_xs_default">시승 가능</div>
-          </div>
-          <div class="place_list">
-            <h4>에어버스 체험장 제주공항점</h4>
-            <p id="address">제주특별자치도 제주시 공항로 2 제주국제공항</p>
-            <p id="hour">운영시간 : 09:00 &sim; 18:00</p>
-            <p id="number">064)064-0640</p>
-            <div class="btn_xs_default">시승 가능</div>
+          <div id="list_left">
+            <div class="place_list">
+              <h4>에어버스 체험장 인천공항점</h4>
+              <p id="address">인천광역시 중구 공항로 271 인천국제공항역</p>
+              <p id="hour">운영시간 : 09:00 &sim; 22:00</p>
+              <p id="number">031) 031 - 0310</p>
+              <div class="btn_xs_default">구매 안내 가능</div>
+              <div class="btn_xs_default">조종사 상주</div>
+            </div>
+            <div class="place_list">
+              <h4>에어버스 체험장 김포공항점</h4>
+              <p id="address">서울특별시 강서구 하늘길 38</p>
+              <p id="hour">운영시간 : 09:00 &sim; 18:00</p>
+              <p id="number">02)020-2020</p>
+              <div class="btn_xs_default">구매 안내 가능</div>
+              <div class="btn_xs_default">조종사 상주</div>
+              <div class="btn_xs_default">시승 가능</div>
+            </div>
+            <div class="place_list">
+              <h4>에어버스 체험장 제주공항점</h4>
+              <p id="address">제주특별자치도 제주시 공항로 2 제주국제공항</p>
+              <p id="hour">운영시간 : 09:00 &sim; 18:00</p>
+              <p id="number">064)064-0640</p>
+              <div class="btn_xs_default">시승 가능</div>
+            </div>
           </div>
         </div>
         <div class="right" id="mapright">
           <div id="map"></div>
         </div>
       </div>
+      <div class="submit">
+        <div class="btn_md_defult">시승신청</div>
+      </div>
+
     </div>
 
   </main>
