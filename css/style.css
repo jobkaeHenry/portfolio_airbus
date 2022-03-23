@@ -581,6 +581,7 @@ header .gnb .modelwrap {
     text-align: center;
     display: flex;
     flex-flow: column;
+    cursor: pointer;
 }
 
 #lineup .line .line_wrap img {
@@ -594,6 +595,7 @@ header .gnb .modelwrap {
     text-align: center;
     display: flex;
     flex-flow: column;
+    cursor: pointer;
 }
 
 #lineup .line .line_wrap_active img {
@@ -921,6 +923,7 @@ header .gnb .modelwrap {
 }
 .sm_atc img,
 .lg_atc img{
+    width: 100%;
     user-select: none;
 }
 .sm_atc:hover img{
