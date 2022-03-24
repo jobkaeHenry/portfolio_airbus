@@ -563,6 +563,7 @@ header .gnb .modelwrap {
   align-items: center;
 }
 
+
 /* 푸터 */
 footer {
   width: 100%;
@@ -603,6 +604,8 @@ footer img {
   max-width: 22px;
   float: left;
 }
+
+/* ---------------------------반응형----------------------------- */
 
 @media screen and (max-width: 1810px) {
   /* 들고다닐것 */

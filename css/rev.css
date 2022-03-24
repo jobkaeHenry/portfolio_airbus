@@ -1,9 +1,10 @@
 .top {
   width: 100%;
   height: 275px;
-  background-image: url(../img/exper_top.jpg);
+  background-image: url(../img/login_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +23,71 @@
   color: #fff
 }
 
+.wrap {
+  width: 100%;
+  height: auto;
+  padding: 100px 13%;
+
+}
+
 .container {
   width: 100%;
+  height: auto;
   border-top: solid 1px #c4c4c4;
   border-bottom: solid 1px #c4c4c4;
-  padding: 25px 0;
-  overflow: hidden;
+
   padding: 30px 13%;
+  padding-top: 50px;
   margin-bottom: 30px;
 }
 
-.wrap {
-  padding: 100px 13%;
-  overflow: hidden;
+.l_agree{
+  margin-bottom: 5px;
+}
+.btn_md_defult {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
+table {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 20px 20px;
+  border: 1px solid #c4c4c4;
+}
+.gray{
+  background-color: #f9f9f9;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 80%;
+  border: 1px solid #c4c4c4;
+  height: 40px;
+  padding: 0 15px;
+}
+
+.pagree {
+  width: 100%;
+  height: 200px;
+  padding: 20px 20px;
+  overflow: scroll;
+  border: 1px solid #c4c4c4;
+  margin: 15px auto;
+}
+
+#agreerule {
+  width: auto;
+  height: auto;
+  margin-right: 1%;
 }
