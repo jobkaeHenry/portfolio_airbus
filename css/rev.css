@@ -20,7 +20,8 @@
 }
 
 .top .txtwrap p {
-  color: #fff
+  color: #fff;
+  font-weight: 300;
 }
 
 .wrap {

@@ -444,10 +444,19 @@ header .gnb .modelwrap {
 #banner .img {
     width: 100%;
     height: 690px;
-    background-image: url(../img/banner_H135_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+}
+#banner #bannerimg_1{
+    background-image: url(../img/banner_H135_2.jpg);
+}
+#banner #bannerimg_2{
+    background-image: url(../img/SliderH145-2.jpg);
+}
+#banner #bannerimg_3{
+    background-image: url(../img/EXPH-1790-13b.jpg);
+    background-position: bottom;
 }
 
 #banner .txtwrap_bn {
@@ -494,6 +503,7 @@ header .gnb .modelwrap {
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-bottom: 15px;
 }
 
 #banner .signup .loginbox :last-child {
