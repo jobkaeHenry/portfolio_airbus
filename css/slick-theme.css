@@ -47,7 +47,7 @@
 }
 
 .slick-next {
-    left: 97%;
+    left: 96%;
 }
 
 .slick-prev:hover,
@@ -205,4 +205,14 @@
 .slick-dots li.slick-active button:before {
     opacity: 1;
     color: #00006D;
+}
+
+
+@media screen and (max-width: 650px) {
+    .slick-next {
+        left: 92%;
+    }
+    .slick-prev {
+        left: 8%;
+    }
 }
