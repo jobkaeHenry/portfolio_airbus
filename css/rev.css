@@ -37,8 +37,9 @@
   border-top: solid 1px #c4c4c4;
   border-bottom: solid 1px #c4c4c4;
 
-  padding: 30px 13%;
+  padding: 30px;
   padding-top: 50px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 

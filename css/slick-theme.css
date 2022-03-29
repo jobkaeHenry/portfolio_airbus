@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* Slider */
 .slick-loading .slick-list {
@@ -125,7 +125,7 @@
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
 
     display: block;
 
