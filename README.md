@@ -6,6 +6,9 @@ UX 포인트
 근미래 한국에 헬리콥터가 보편화될것을 예상해
 한국에 익숙한 마일, 갤런 대신 km, kg 등의 개량형을 사용했다.
 
+(작업중인 사이트)
+https://jobkaehenry.github.io/portfolio_airbus-redesign/
+
 
 
 개발 일지
