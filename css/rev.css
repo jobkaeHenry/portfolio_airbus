@@ -11,15 +11,16 @@
   flex-direction: column
 }
 
-.txtwrap {
+.titwrap {
   text-align: center;
+  padding: 0 13%;
 }
 
-.top .txtwrap h2 {
+.top .titwrap h2 {
   color: #fff
 }
 
-.top .txtwrap p {
+.top .titwrap p {
   color: #fff;
   font-weight: 300;
 }
@@ -71,6 +72,12 @@ td {
 form {
   width: 100%;
 }
+#pcform{
+  display: block;
+}
+#mobform{
+  display: none;
+}
 
 input {
   width: 80%;
@@ -86,6 +93,7 @@ input {
   overflow: scroll;
   border: 1px solid #c4c4c4;
   margin: 15px auto;
+  overflow-x: hidden;
 }
 
 #agreerule {
@@ -93,3 +101,36 @@ input {
   height: auto;
   margin-right: 1%;
 }
+
+@media screen and (max-width:900px){
+  form h5{
+    margin-top: 20px;
+  }
+  input{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #pcform{
+    display: none;
+  }
+  #mobform{
+    display: block;
+  }
+
+  .btn_sm_defult{
+    margin-top: 30px;
+  }
+  #receive{
+    padding: 30px 0;
+  }
+  .wrap{
+    padding: 13% 13%
+  }
+
+  }
+
+  @media screen and (max-width:621px) {
+    .top,.dim{
+      height: 200px;
+    }
+  }

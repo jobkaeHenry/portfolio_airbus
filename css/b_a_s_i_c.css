@@ -146,6 +146,44 @@ p {
   user-select: none;
 }
 
+.btn_sm_defult {
+
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #00006D;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn_sm_defult:hover {
+
+  color: #00006D;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #00006D;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .btn_md_disabled {
   color: #fff;
   font-size: 1em;
@@ -583,6 +621,17 @@ header .gnb .modelwrap {
   h1 {
     display: none;
   }
+
+
+  h2{
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #242424;
+  }
+
 
   .imgbox>img {
     max-width: 100%;

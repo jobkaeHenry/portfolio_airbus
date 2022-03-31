@@ -1,3 +1,7 @@
+h3>br {
+  display: none;
+}
+
 .top {
   width: 100%;
   height: 275px;
@@ -11,24 +15,200 @@
   flex-direction: column;
 }
 
-.txtwrap {
+.titwrap {
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 0 13%;
 }
 
-.top .txtwrap h2 {
+.top .titwrap h2 {
   color: #fff;
+
 }
 
-.top .txtwrap p {
+.top .titwrap p {
   color: #fff;
   font-weight: 300;
+  text-align: center;
 }
-.dim{
+
+.dim {
   width: 100%;
   height: 275px;
   background-color: black;
   position: absolute;
   opacity: 0.75;
+}
+
+.video {
+  margin: 0 auto;
+  padding: 7% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.youtube {
+  width: 75vw;
+  height: 42vw;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 562px;
+  text-align: center;
+  padding: 3% 13%;
+  background-image: url(../img/ELA_update.jpg);
+}
+
+article h3 {
+  color: #fff;
+}
+
+article p {
+  color: #fff;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  padding: 100px 13%;
+
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+
+  padding: 30px;
+  padding-top: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.l_agree {
+  margin-bottom: 5px;
+}
+
+.btn_md_defult {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 20px 20px;
+  border: 1px solid #c4c4c4;
+}
+
+.gray {
+  background-color: #f9f9f9;
+}
+
+form {
+  width: 100%;
+}
+
+#pcform {
+  display: block;
+}
+
+#mobform {
+  display: none;
+}
+
+input {
+  width: 80%;
+  border: 1px solid #c4c4c4;
+  height: 40px;
+  padding: 0 15px;
+}
+
+.pagree {
+  width: 100%;
+  height: 200px;
+  padding: 20px 20px;
+  overflow: scroll;
+  border: 1px solid #c4c4c4;
+  margin: 15px auto;
+  overflow-x: hidden;
+}
+
+#agreerule {
+  width: auto;
+  height: auto;
+  margin-right: 1%;
+}
+
+@media screen and (max-width:900px) {
+  input{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  br {
+    display: block;
+  }
+
+  #pcform{
+    display: none;
+  }
+  #mobform{
+    display: block;
+  }
+
+  .btn_sm_defult{
+    margin-top: 30px;
+  }
+  #receive{
+    padding: 30px 0;
+  }
+  .wrap{
+    padding: 13% 13%
+  }
+
+}
+
+@media screen and (max-width:621px) {
+  .top,.dim{
+    height: 200px;
+  }
+  form h5{
+    margin-top: 20px;
+  }
+  
+  .video {
+    padding: 0;
+  }
+
+  .youtube {
+    width: 100vw;
+    height: 56.5vw;
+  }
+  article{
+    height: 300px;
+  }
+
 }
