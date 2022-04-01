@@ -20,7 +20,7 @@ var positions = [{
     latlng: new kakao.maps.LatLng(33.50726107097914, 126.49331789961546)
   },
 ];
-var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+var imageSrc = "../img/pin.png";
 
 for (var i = 0; i < positions.length; i++) {
 
