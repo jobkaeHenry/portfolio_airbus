@@ -1,4 +1,7 @@
 ﻿# portfolio_airbus
+ 
+
+<하드코딩 프로젝트>
 
 still working on it
 
