@@ -1,0 +1,152 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+    width: 74%;
+    min-height: 85vh;
+    flex-direction: column;
+}
+
+.titwrap {
+    margin: 100px 0;
+    margin-bottom: 0;
+}
+
+.titletext {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+.right {
+    float: left;
+}
+
+.searchWrap {
+    display: flex;
+    justify-content: right;
+}
+
+.searchWrap>button {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/search.png);
+    margin-left: 10px;
+}
+
+.tableWrap {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td:first-child {
+    width: 13%;
+
+}
+
+td {
+    padding: 15px 30px;
+    border-bottom: 1px solid #ebebeb;
+    font-weight: 300;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    cursor: pointer;
+}
+
+td:nth-child(2):hover {
+    color: #191993;
+    transition-duration: 300ms;
+}
+
+td:last-child {
+    width: 13%;
+
+}
+
+tr:first-child>td {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 19px;
+    text-align: center;
+}
+
+tr:first-child td {
+    cursor: default;
+    font-weight: 500;
+}
+
+tr:first-child td:hover {
+    color: #242424;
+
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.bottom img {
+    max-height: 16px;
+    margin: 0 20px;
+}
+
+.bottom span {
+    float: left;
+    display: inline-block;
+    margin: 0 3px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+
+.bottom img {
+    display: block;
+    cursor: pointer;
+}
+
+.bottom .selected {
+    color: #191993;
+}
+
+@media screen and (max-width: 660px) {
+    .titwrap {
+        margin: 50px auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .searchWrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    td:last-child {
+        display: none;
+    }
+
+
+    td:nth-child(2) {
+        text-align: center;
+    }
+
+    td {
+        padding: 15px 0;
+    }
+
+}

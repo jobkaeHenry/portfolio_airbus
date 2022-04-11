@@ -21,6 +21,10 @@ li {
 a {
   text-decoration: none;
 }
+table{
+  border-collapse: collapse;
+}
+
 
 .wrap {
   width: 100%;
@@ -30,6 +34,7 @@ a {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* 텍스트스타일 */
@@ -68,12 +73,29 @@ p {
 .bold {
   font-weight: 700;
 }
+.medium{
+  font-weight: 500;
+}
 
 .thin {
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
 }
-
+.blue{
+  color: #191993;
+}
+.gray{
+  color: #6b6b6b;
+}
+.mb{
+  margin-bottom: 30px;
+}
+.mt{
+  margin-top: 30px;
+}
+.center{
+  text-align: center;
+}
 /* 디자인 컴포넌트 */
 
 .logo_lg {

@@ -1,192 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>에어버스 1:1문의</title>
   <link rel="stylesheet" href="../css/b_a_s_i_c.css">
+  <link rel="stylesheet" href="../css/qna.css">
   <script src="../js/jquery.min.js"></script>
   <script src="../js/top.js"></script>
-  
-  </head>
-  
-  
-  <body>
-    <header>
-      <nav>
-        <div class="login">
+  <script src="../js/seeAll.js"></script>
+
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <div class="login">
+        <ul>
+          <li><a href="../sub/login.html">로그인</a></li>
+          <li><a href="../sub/signup.html">회원가입</a></li>
+        </ul>
+      </div>
+      <div class="header_menu">
+        <h1>
+          <a href="../index.html">
+            <div class="logo_md" alt="로고"></div>
+          </a>
+        </h1>
+        <div class="gnb">
           <ul>
-            <li><a href="../sub/login.html">로그인</a></li>
-            <li><a href="../sub/signup.html">회원가입</a></li>
+            <li class="model">모델
+              <div class="modelwrap">
+                <div class="txtwrap">
+                  <p>모델정보</p>
+                  <ul id="modelli">
+                    <li class="activeTop" id="mli1">소형</li>
+                    <li id="mli2">중형</li>
+                    <li id="mli3">대형</li>
+                  </ul>
+                </div>
+                <!-- 첫번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap1">
+                  <a href="../sub/model125.html">
+                    <div class="imgbox">
+                      <img src="../img/H125.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H125</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model130.html">
+                    <div class="imgbox">
+                      <img src="../img/H130.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H130</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model135.html">
+                    <div class="imgbox">
+                      <img src="../img/H135.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H135</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 두번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap2">
+                  <a href="../sub/model145.html">
+                    <div class="imgbox">
+                      <img src="../img/H145.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H145</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model155.html">
+                    <div class="imgbox">
+                      <img src="../img/H155.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H155</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model160.html">
+                    <div class="imgbox">
+                      <img src="../img/H160.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H160</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 세번째 모델리스트 -->
+                <div class="boxwrap" id="boxwrap3">
+                  <a href="../sub/model175.html">
+                    <div class="imgbox">
+                      <img src="../img/H175.png" alt="h125헬리콥터">
+                      <div>
+                        <h4>H175</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model215.html">
+                    <div class="imgbox">
+                      <img src="../img/H215.png" alt="h130헬리콥터">
+                      <div>
+                        <h4>H215</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../sub/model225.html">
+                    <div class="imgbox">
+                      <img src="../img/H225.png" alt="h135헬리콥터">
+                      <div>
+                        <h4>H225</h4>
+                        <p>120,000&#36;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li class="contact">체험
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/experience.html">시승신청</a></li>
+                  <li><a href="../sub/recieveinfo.html">카달로그 신청</a></li>
+                  <li><a href="../sub/tour.html">견학신청</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="support">고객지원
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/Hcare.html">Hcare</a></li>
+                  <li><a href="../sub/qna.html">1:1문의</a></li>
+                  <li><a href="../sub/notice.html">공지사항</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="info">회사소개
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="../sub/news.html">보도자료</a></li>
+                  <li><a href="../sub/value.html">경영이념</a></li>
+                  <li><a href="../sub/achivement.html">성과</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="header_menu">
-          <h1>
-            <a href="../index.html">
-              <div class="logo_md" alt="로고"></div>
-            </a>
-          </h1>
-          <div class="gnb">
-            <ul>
-              <li class="model">모델
-                <div class="modelwrap">
-                  <div class="txtwrap">
-                    <p>모델정보</p>
-                    <ul id="modelli">
-                      <li class="activeTop" id="mli1">소형</li>
-                      <li id="mli2">중형</li>
-                      <li id="mli3">대형</li>
-                    </ul>
-                  </div>
-                  <!-- 첫번째 모델리스트 -->
-                  <div class="boxwrap" id="boxwrap1">
-                    <a href="../sub/model125.html">
-                      <div class="imgbox">
-                        <img src="../img/H125.png" alt="h125헬리콥터">
-                        <div>
-                          <h4>H125</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model130.html">
-                      <div class="imgbox">
-                        <img src="../img/H130.png" alt="h130헬리콥터">
-                        <div>
-                          <h4>H130</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model135.html">
-                      <div class="imgbox">
-                        <img src="../img/H135.png" alt="h135헬리콥터">
-                        <div>
-                          <h4>H135</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- 두번째 모델리스트 -->
-                  <div class="boxwrap" id="boxwrap2">
-                    <a href="../sub/model145.html">
-                      <div class="imgbox">
-                        <img src="../img/H145.png" alt="h125헬리콥터">
-                        <div>
-                          <h4>H145</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model155.html">
-                      <div class="imgbox">
-                        <img src="../img/H155.png" alt="h130헬리콥터">
-                        <div>
-                          <h4>H155</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model160.html">
-                      <div class="imgbox">
-                        <img src="../img/H160.png" alt="h135헬리콥터">
-                        <div>
-                          <h4>H160</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- 세번째 모델리스트 -->
-                  <div class="boxwrap" id="boxwrap3">
-                    <a href="../sub/model175.html">
-                      <div class="imgbox">
-                        <img src="../img/H175.png" alt="h125헬리콥터">
-                        <div>
-                          <h4>H175</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model215.html">
-                      <div class="imgbox">
-                        <img src="../img/H215.png" alt="h130헬리콥터">
-                        <div>
-                          <h4>H215</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="../sub/model225.html">
-                      <div class="imgbox">
-                        <img src="../img/H225.png" alt="h135헬리콥터">
-                        <div>
-                          <h4>H225</h4>
-                          <p>120,000&#36;</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-  
-              </li>
-              <li class="contact">체험
-                <div class="menuwrap">
-                  <ul>
-                    <li><a href="../sub/experience.html">시승신청</a></li>
-                    <li><a href="../sub/recieveinfo.html">카달로그 신청</a></li>
-                    <li><a href="../sub/tour.html">견학신청</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="support">고객지원
-                <div class="menuwrap">
-                  <ul>
-                    <li><a href="../sub/Hcare.html">Hcare</a></li>
-                    <li><a href="../sub/qna.html">1:1문의</a></li>
-                    <li><a href="../sub/notice.html">공지사항</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="info">회사소개
-                <div class="menuwrap">
-                  <ul>
-                    <li><a href="../sub/news.html">보도자료</a></li>
-                    <li><a href="../sub/value.html">경영이념</a></li>
-                    <li><a href="../sub/achivement.html">성과</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+      </div>
+  </header>
+
+  <main>
+    <div class="top">
+      <div class="titwrap">
+        <h2>1:1 문의</h2>
+        <p>신속하게 답변하도록 노력하겠습니다.</p>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <div class="wrap">
+
+      <form action="#" method="post" id="pcform">
+        <div class="container">
+          <div class="formwrap">
+            <label class="h5" for="para"> 문의 내용<span class="blue">*</span></label>
+            <textarea class="ip" placeholder="자세한 내용을 함께 보내주시면 더욱 신속히 답변드릴수 있습니다.
+        
+        
+10월 18일부터 산업안전보건법에 고객응대 근로자 보호조치가 시행됩니다(시행 년도 2018년). 고객응대근로자에게 폭언, 욕설 등을 하지 말아주세요." id="para" name="para"></textarea>
+          </div>
+          <div class="formwrap">
+            <label class="h5" for="email">E-mail<span class="blue">*</span></label>
+            <input class="ip" type="email" name="email" id="email" placeholder="예)airbus@airbuscorp.com">
+          </div>
+          <div class="formwrap">
+            <label class="h5" for="phonenum">연락처<span class="blue">*</span></label>
+            <input class="ip" type="tel" name="phonenum" id="phonenum" placeholder="예)010-0000-0000">
           </div>
         </div>
-    </header>
-  
-    <main>
-  Q&A
-    </main>
-  
-  
-    <footer>
-      <a href="../index.html">
-          <div class="logo_md_wh"></div>
-      </a>
-      <div class="footer_menu">
-          <ul>
-              <li><a href="https://www.youtube.com/c/airbushelicopters"><img src="../img/icon_youtube.png"
-                          alt="유튜브아이콘"></a></li>
-              <li><a href="https://www.instagram.com/airbus_helicopters/"> <img src="../img/icon_instagram.png"
-                          alt="인스타아이콘"></a></li>
-              <li><a href="https://www.facebook.com/AirbusHelicopters/"> <img src="../img/icon_facebook.png"
-                          alt="페이스북아이콘"></a></li>
-  
-          </ul>
-      </div>
-      <div class="footer_p">Copyright reserved by airbus helicopter</div>
+        <div class="termbox">
+          <div class="termwrap">
+            <input type="checkbox" id="term">
+            <label for="term">(필수) 개인정보 수집,이용동의</label>
+            <button class="blue bold" id="seeAllBtn" type="button" onclick="js:hideShow()">전문보기</button>
+          </div>
+
+          <div id="all">
+            <div class="allcontainer">
+              <h5 class="bold mb">개인정보 수집·이용에 대한 안내</h5>
+
+              <p class="medium">필수 수집·이용 항목<br>
+                <span class="gray">문의접수와 처리,회신을 위한 최소한의 개인정보입니다.동의가 필요합니다.</span></p>
+              <table class="center mt">
+                <tr>
+                  <td>수집항목</td>
+                  <td>목적</td>
+                  <td>보유기간</td>
+                </tr>
+                <tr>
+                  <td class="gray">이메일 주소, 휴대폰 번호</td>
+                  <td class="gray">고객문의 및 상담요청에 대한 회신,
+                    상담을 위한 서비스 이용기록 조회</td>
+                  <td class="gray">관련 법령 또는 회사 내부방침에 의해
+                    보존 필요 시 까지 보관, 그외 지체없이 파기</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <input type="submit" class="btn_md_defult" id="submit">
+      </form>
+    </div>
+  </main>
+
+
+  <footer>
+    <a href="../index.html">
+      <div class="logo_md_wh"></div>
+    </a>
+    <div class="footer_menu">
+      <ul>
+        <li><a href="https://www.youtube.com/c/airbushelicopters"><img src="../img/icon_youtube.png" alt="유튜브아이콘"></a>
+        </li>
+        <li><a href="https://www.instagram.com/airbus_helicopters/"> <img src="../img/icon_instagram.png"
+              alt="인스타아이콘"></a></li>
+        <li><a href="https://www.facebook.com/AirbusHelicopters/"> <img src="../img/icon_facebook.png"
+              alt="페이스북아이콘"></a></li>
+
+      </ul>
+    </div>
+    <div class="footer_p">Copyright reserved by airbus helicopter</div>
   </footer>
-  
-  
-  </body>
-  </html>
+
+
+</body>
+</html>
