@@ -1,49 +1,41 @@
 .top {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/factory.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.titwrap {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  padding: 0 13%;
-}
-
-.top .titwrap h3,
-h4 {
-  color: #fff;
-
-}
-
-.top .titwrap p {
-  color: #fff;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.dim {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.75;
-}
-
-
-
-
-@media screen and (max-width:670px) {
-  br {
-    display: none;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/factory.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+  
+  .titwrap {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 13%;
+  }
+  
+  .top .titwrap h3,h4 {
+    color: #fff;
+  
+  }
+  
+  .top .titwrap p {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .dim {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.75;
+  }
+.imgWrap{
+    width: 100%;
 }
