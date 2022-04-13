@@ -1,0 +1,173 @@
+.top {
+  width: 100%;
+  height: 275px;
+  background-image: url(../img/qna_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.titwrap {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 13%;
+}
+
+.top .titwrap h2 {
+  color: #fff;
+
+}
+
+.top .titwrap p {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.dim {
+  width: 100%;
+  height: 275px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.75;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  padding: 100px 13%;
+
+}
+
+.container {
+  width: 100%;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.h5 {
+  width: 150px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+.h5>span{
+font-size: 2rem;
+}
+
+.ip{
+  width: 100%;
+  text-align: start;
+  resize: none;
+  padding: 15px;
+}
+
+::placeholder{
+  color: #c4c4c4;
+  text-align: start;
+}
+#para{
+  height: 300px;
+}
+.formwrap{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.formwrap:last-child{
+  margin-bottom: 0;
+}
+.termbox{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.termwrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.termwrap>span{
+  cursor: pointer;
+  margin-left: 30px;
+}
+#term{
+  margin-right: 10px;
+}
+#all{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 87%;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+  padding: 50px 0;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.termwrap>button{
+  margin-left: 30px;
+}
+.allcontainer{
+  width: 87%;
+}
+table{
+  border-collapse: collapse;
+  width:100%;
+  border-top: 1px solid #242424;
+  border-bottom:1px solid #242424;
+}
+tr,td{
+  width: 33%;
+  padding: 10px 20px;
+}
+
+#submit{
+  display: block;
+  margin: 30px auto;
+}
+tr:first-child{
+  border-bottom: 1px solid #c4c4c4;
+}
+
+
+@media screen and (max-width:900px) {
+  .wrap {
+    padding: 13% 13%
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .top {
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  .top,
+  .dim {
+    height: 200px;
+  }
+}

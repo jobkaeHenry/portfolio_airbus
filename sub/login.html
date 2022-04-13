@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에어버스 로그인</title>
+    <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/top.js"></script>
 </head>
 
 <body>
     <div class="background">
         <div class="loginwrap">
-
             <h1>
                 <a href="../index.html">
                     <img src="../img/airbus_logo.svg" alt="에어버스로고">
@@ -20,12 +21,12 @@
             </h1>
 
             <div class="login">
-                <form action="#" method="post">
+                <form action="#" method="post" name="login">
                     <label for="id">이메일주소</label>
                     <input type="email" id="id">
                     <label class="password" for="password">비밀번호</label>
                     <input type="password" id="password">
-                    <button class="btn_lg_disabled">
+                    <button class="btn_lg_disabled" id="btn" onclick="loginCheck()">
                         로그인
                     </button>
                 </form>
@@ -37,5 +38,4 @@
         </div>
     </div>
 </body>
-
 </html>

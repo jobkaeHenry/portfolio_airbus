@@ -1,0 +1,33 @@
+.uni_bg img {
+    margin-top: 10vh;
+    max-width: 80%;
+  }
+  .uni_bg p{
+    color: #fff;
+  }
+  
+  .imgWrap{
+    width: 100vh;
+  }
+
+  .uni_bg {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/bg_pattern.jpg);
+    background-attachment: fixed;
+  }
+  
+  .left {
+    float: left;
+  
+  }
+  .left img{
+    border-radius: 0 300px 300px 0;
+  }
+  
+  .right {
+    float: right;
+  }
+  .right img{
+    border-radius: 400px 0 0 400px;
+  }

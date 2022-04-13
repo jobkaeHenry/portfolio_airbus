@@ -1,3 +1,5 @@
+$('head').append('<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_32x32.png"/>');
+
 $(function () {
   // 최상단 박스
   $("#boxwrap2").hide();
@@ -319,4 +321,20 @@ $(function () {
 
 
 
+});
+
+
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.fadeInBottom').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-bottom':'0px'},600);
+          }
+          
+      }); 
+  });
 });

@@ -738,6 +738,12 @@ header .gnb .modelwrap {
     margin-bottom: 55px;
 }
 
+.fadeInBottom {
+    opacity:0;
+    margin-bottom:-100px;    
+    max-width:100%;
+}
+
 /* customizing */
 #custom {
     width: 100%;

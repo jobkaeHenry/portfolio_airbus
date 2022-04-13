@@ -1,3 +1,5 @@
+$('head').append('<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_32x32.png"/>');
+
 $(function () {
   $("#boxwrap2").hide();
   $("#boxwrap3").hide();
