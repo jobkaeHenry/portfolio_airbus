@@ -1,0 +1,93 @@
+.top {
+    width: 100%;
+    height: 275px;
+    background-image: url(../img/airbus_factory.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+  }
+  
+  .titwrap {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 13%;
+  }
+  
+  .top .titwrap h2 {
+    color: #fff;
+  
+  }
+  
+  .top .titwrap p {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .dim {
+    width: 100%;
+    height: 275px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.75;
+  }
+
+  .h5{
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+  }
+
+  .value_container{
+      width: 74%;
+    margin: 0 auto;
+  }
+  .value_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .reverse{
+      flex-direction: row-reverse;
+      text-align: end;
+  }
+
+    .value_text{
+    overflow: hidden;
+    margin-top: 85px;
+    width: 40%;
+  }
+  
+  iframe{
+      width: 582px;
+      height: 378px;
+      overflow: hidden;
+  }
+
+  .value_r:before{
+    content: '';
+    display: block;
+    background-image: url(../img/Group\ 41.png);
+    width: 200px;
+    height: 3px;
+    position: absolute;
+    right: 43%;
+    margin-top: 35px;
+  }
+
+  .value_l::before{
+    content: '';
+    display: block;
+    background-image: url(../img/Group\ 42.png);
+    width: 200px;
+    height: 3px;
+    position: absolute;
+    left: 43%;
+    margin-top: 35px;
+  }

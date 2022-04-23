@@ -1,33 +1,124 @@
 .uni_bg img {
-    margin-top: 10vh;
-    max-width: 80%;
+  /* margin-top: 10vh; */
+  max-width: 80%;
+}
+
+.uni_bg p {
+  color: #fff;
+}
+
+.imgWrap {
+  width: 100vh;
+}
+
+.uni_bg {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/bg_pattern.jpg);
+  background-attachment: fixed;
+}
+
+h2 {
+  color: #fff;
+}
+
+.heading {
+  margin: 100px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.imgtxt {
+  width: 100%;
+  overflow: hidden;
+  margin: 100px auto;
+}
+
+.imgtxt .imgbox_inside {
+
+  height: 400px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+.num1 {
+  background-image: url(../img/image\ 7.png);
+  width: 710px;
+}
+
+.num2 {
+  background-image: url(../img/image\ 8.png);
+  width: 827px;
+}
+
+.num3 {
+  background-image: url(../img/image\ 9.png);
+  width: 963px;
+}
+
+.num4 {
+  background-image: url(../img/image\ 10.png);
+  width: 1070px;
+}
+
+
+.txtbox {
+  float: right;
+  height: 400px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 200px 0 0 200px;
+  padding-left: 200px;
+  margin-top: -150px;
+}
+
+.white {
+  color: #fff;
+  display: block;
+  margin-right: 125px;
+  width: 83%;
+}
+
+
+
+@media screen and (max-width:1440px) {
+
+  .white {
+    width: 80%;
   }
-  .uni_bg p{
-    color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+  .txtbox {
+    width: 90%;
   }
-  
-  .imgWrap{
-    width: 100vh;
+  .imgtxt .imgbox_inside {
+    margin-left: -30%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .txtbox {
+    margin-top: -40px;
+    padding-left: 70px;
+
   }
 
-  .uni_bg {
-    width: 100%;
-    overflow: hidden;
-    background-image: url(../img/bg_pattern.jpg);
-    background-attachment: fixed;
+  .imgtxt .imgbox_inside {
+    margin-left: 0;
+    height: 30vw;
   }
-  
-  .left {
-    float: left;
-  
+  .white {
+    width: 95%;
   }
-  .left img{
-    border-radius: 0 300px 300px 0;
-  }
-  
-  .right {
-    float: right;
-  }
-  .right img{
-    border-radius: 400px 0 0 400px;
+}
+
+@media screen and (max-width: 428px){
+.txtbox {
+    width: 100%;}
   }
